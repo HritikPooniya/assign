@@ -1,0 +1,38 @@
+/* styles/Animation.module.css */
+.imageContainer {
+    position: relative;
+    margin: 20px;
+    display: inline-block;
+  }
+  
+  .imageContainer img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; /* Ensure the image is a circle */
+    object-fit: cover; /* Cover the container without distortion */
+  }
+ 
+  
+  .loader {
+    position: absolute;
+    top: -0.1%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid orangered;
+    border-top-color: transparent; /* Transparent top to create spinner effect */
+    animation: spin 1.5s linear infinite;
+    transform: translate(-50%, -50%); /* Center the loader */
+    z-index: 1; /* Ensure the loader is above the image */
+    pointer-events: none; /* Prevent interaction with the loader */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
