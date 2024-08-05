@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import styles from '../styles/Animation.module.css';
+import styles from '@/styles/Animation.module.css';
 
 const ImageLoader = ( {images } : any) => {
   const [currentIndex, setCurrentIndex] = useState(0);
