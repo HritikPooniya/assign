@@ -33,9 +33,9 @@ api.interceptors.response.use(
 
         return api(originalRequest);
       } catch (err) {
-        // Handle refresh token failure (e.g., log out user)
+         
         console.error('Refresh token failed:', err);
-        // You might want to redirect to login here
+     
       }
     }
     return Promise.reject(error);
