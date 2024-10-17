@@ -75,6 +75,7 @@ const Login = () => {
         login();
         navigate("/dashboard");
       } catch (error) {
+        alert(error?.data?.message);
         console.error("Login failed:", error);
       }
     }
